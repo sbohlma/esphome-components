@@ -78,6 +78,8 @@ class VL53L1XComponent : public PollingComponent, public i2c::I2CDevice, public 
   bool set_timing_budget(uint16_t timing_budget_ms);
   bool get_timing_budget(uint16_t *timing_budget_ms);
 
+  bool set_roi_size(uint8_t width, uint8_t height);
+
   bool set_distance_mode(DistanceMode distance_mode);
   bool get_distance_mode(DistanceMode *mode);
 
